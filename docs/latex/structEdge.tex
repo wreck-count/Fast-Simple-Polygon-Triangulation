@@ -1,0 +1,70 @@
+\hypertarget{structEdge}{}\section{Edge Struct Reference}
+\label{structEdge}\index{Edge@{Edge}}
+
+
+\hyperlink{structEdge}{Edge} struct\+: has \hyperlink{structEdge}{Edge} data members that store pointers to twin, next and prev has \hyperlink{structVertex}{Vertex} data members that store pointers to origin and helper has a \hyperlink{structFace}{Face} data member that points to the incident face.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+structure.\+hpp$>$}
+
+
+
+Collaboration diagram for Edge\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{structEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVertex}{Vertex} $\ast$ \hyperlink{structEdge_a3fe7e84f2ef319dbe30d48c4d268832d}{get\+\_\+helper} ()
+\item 
+\mbox{\Hypertarget{structEdge_a8570e2155927300a0769e90a284d554c}\label{structEdge_a8570e2155927300a0769e90a284d554c}} 
+void {\bfseries set\+\_\+helper} (\hyperlink{structVertex}{Vertex} $\ast$v)
+\item 
+\mbox{\Hypertarget{structEdge_a497ea9939f608695dde42a4362ff4714}\label{structEdge_a497ea9939f608695dde42a4362ff4714}} 
+bool {\bfseries operator$<$} (const \hyperlink{structEdge}{Edge} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEdge_a45fb96b9c533f450b1f7f4a03a353d96}\label{structEdge_a45fb96b9c533f450b1f7f4a03a353d96}} 
+struct \hyperlink{structEdge}{Edge} $\ast$ {\bfseries twin}
+\item 
+\mbox{\Hypertarget{structEdge_a3cf3d57ae65110456b5d809a658757fc}\label{structEdge_a3cf3d57ae65110456b5d809a658757fc}} 
+struct \hyperlink{structEdge}{Edge} $\ast$ {\bfseries next}
+\item 
+\mbox{\Hypertarget{structEdge_ae4477dab61b692f0a1bc3241e3bfaddd}\label{structEdge_ae4477dab61b692f0a1bc3241e3bfaddd}} 
+struct \hyperlink{structEdge}{Edge} $\ast$ {\bfseries prev}
+\item 
+\mbox{\Hypertarget{structEdge_a2de3c697d4a77673df6bcac7cc7b5b08}\label{structEdge_a2de3c697d4a77673df6bcac7cc7b5b08}} 
+struct \hyperlink{structVertex}{Vertex} $\ast$ {\bfseries origin}
+\item 
+\mbox{\Hypertarget{structEdge_abb06ddf30396af97c26a5a43bec10ef7}\label{structEdge_abb06ddf30396af97c26a5a43bec10ef7}} 
+struct \hyperlink{structVertex}{Vertex} $\ast$ {\bfseries helper}
+\item 
+\mbox{\Hypertarget{structEdge_aeca88bcc64d0e3a1393f87613bfc5fe8}\label{structEdge_aeca88bcc64d0e3a1393f87613bfc5fe8}} 
+struct \hyperlink{structFace}{Face} $\ast$ {\bfseries incident\+\_\+face}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structEdge}{Edge} struct\+: has \hyperlink{structEdge}{Edge} data members that store pointers to twin, next and prev has \hyperlink{structVertex}{Vertex} data members that store pointers to origin and helper has a \hyperlink{structFace}{Face} data member that points to the incident face. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structEdge_a3fe7e84f2ef319dbe30d48c4d268832d}\label{structEdge_a3fe7e84f2ef319dbe30d48c4d268832d}} 
+\index{Edge@{Edge}!get\+\_\+helper@{get\+\_\+helper}}
+\index{get\+\_\+helper@{get\+\_\+helper}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{get\+\_\+helper()}{get\_helper()}}
+{\footnotesize\ttfamily \hyperlink{structVertex}{Vertex}$\ast$ Edge\+::get\+\_\+helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function that returns the helper vertex 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{data__structure_8hpp}{data\+\_\+structure.\+hpp}\end{DoxyCompactItemize}

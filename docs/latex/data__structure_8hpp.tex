@@ -1,0 +1,51 @@
+\hypertarget{data__structure_8hpp}{}\section{src/data\+\_\+structure.hpp File Reference}
+\label{data__structure_8hpp}\index{src/data\+\_\+structure.\+hpp@{src/data\+\_\+structure.\+hpp}}
+{\ttfamily \#include \char`\"{}utils.\+hpp\char`\"{}}\newline
+Include dependency graph for data\+\_\+structure.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{data__structure_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{data__structure_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structVertex}{Vertex}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structVertex}{Vertex} struct\+: has a data member type that identifies the vertex type among start, end, regular, split, merge has two data members x and y corresponding to the x and y co-\/ordinates of the vertex respectively overloads comparison operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structEdge}{Edge}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structEdge}{Edge} struct\+: has \hyperlink{structEdge}{Edge} data members that store pointers to twin, next and prev has \hyperlink{structVertex}{Vertex} data members that store pointers to origin and helper has a \hyperlink{structFace}{Face} data member that points to the incident face. \end{DoxyCompactList}\item 
+struct \hyperlink{structFace}{Face}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structFace}{Face} struct\+: Contains a pointer to the corresponding \hyperlink{structEdge}{Edge}. \end{DoxyCompactList}\item 
+struct \hyperlink{structDCEL}{D\+C\+EL}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDCEL}{D\+C\+EL} struct\+: The main \hyperlink{structDCEL}{D\+C\+EL} data structure that is used to represent the regions. Implements handling for different kinds of vertices through its member functions; Also implements the make-\/montone function that decomposes the polygon into monotone subcomponents. \end{DoxyCompactList}\item 
+struct \hyperlink{structDCEL_1_1EdgePtrComp}{D\+C\+E\+L\+::\+Edge\+Ptr\+Comp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} Struct\+: Helper struct to compare two edges using the Tau structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structDCEL_1_1VertexPtrComp}{D\+C\+E\+L\+::\+Vertex\+Ptr\+Comp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDCEL_1_1VertexPtrComp}{Vertex\+Ptr\+Comp} Struct\+: Helper struct to compare two vertex pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{data__structure_8hpp_aaab63f35ae8fe4e5681f9b7f71ac5824}\label{data__structure_8hpp_aaab63f35ae8fe4e5681f9b7f71ac5824}} 
+enum {\bfseries vertex\+\_\+types} \{ \newline
+{\bfseries S\+T\+A\+RT}, 
+{\bfseries E\+ND}, 
+{\bfseries R\+E\+G\+U\+L\+AR}, 
+{\bfseries S\+P\+L\+IT}, 
+\newline
+{\bfseries M\+E\+R\+GE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{data__structure_8hpp_ac3a99aa61b0b65f82d2843ffee8a2cbd}\label{data__structure_8hpp_ac3a99aa61b0b65f82d2843ffee8a2cbd}} 
+double {\bfseries get\+\_\+cross} (\hyperlink{structVertex}{Vertex} \&piv, \hyperlink{structVertex}{Vertex} \&u, \hyperlink{structVertex}{Vertex} \&v)
+\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{structDCEL}{}\section{D\+C\+EL Struct Reference}
+\label{structDCEL}\index{D\+C\+EL@{D\+C\+EL}}
+
+
+\hyperlink{structDCEL}{D\+C\+EL} struct\+: The main \hyperlink{structDCEL}{D\+C\+EL} data structure that is used to represent the regions. Implements handling for different kinds of vertices through its member functions; Also implements the make-\/montone function that decomposes the polygon into monotone subcomponents.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+structure.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} Struct\+: Helper struct to compare two edges using the Tau structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structDCEL_1_1VertexPtrComp}{Vertex\+Ptr\+Comp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structDCEL_1_1VertexPtrComp}{Vertex\+Ptr\+Comp} Struct\+: Helper struct to compare two vertex pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDCEL_a9ba659c772047cd7867f49945a557152}\label{structDCEL_a9ba659c772047cd7867f49945a557152}} 
+virtual \hyperlink{structEdge}{Edge} $\ast$ {\bfseries get\+\_\+support} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_a9efcd9a2e78efac4f71931946cdff606}\label{structDCEL_a9efcd9a2e78efac4f71931946cdff606}} 
+virtual void {\bfseries handle\+\_\+start} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_a8fd85fb5dbe52c27fd49e465222ea05d}\label{structDCEL_a8fd85fb5dbe52c27fd49e465222ea05d}} 
+virtual void {\bfseries handle\+\_\+end} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_afd1b47312ef100985cb59f5019f49e01}\label{structDCEL_afd1b47312ef100985cb59f5019f49e01}} 
+virtual void {\bfseries add\+\_\+diagnol} (\hyperlink{structVertex}{Vertex} $\ast$helper, \hyperlink{structVertex}{Vertex} $\ast$v)
+\item 
+\mbox{\Hypertarget{structDCEL_a1cfc774b59a157b111be2db2ad6a2f5d}\label{structDCEL_a1cfc774b59a157b111be2db2ad6a2f5d}} 
+virtual void {\bfseries handle\+\_\+split} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_a4567bbbac7a706cf4d51199e63e7ac5b}\label{structDCEL_a4567bbbac7a706cf4d51199e63e7ac5b}} 
+virtual void {\bfseries handle\+\_\+merge} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_a0e9b658feb6fadea3ca47bd91eca85bc}\label{structDCEL_a0e9b658feb6fadea3ca47bd91eca85bc}} 
+virtual void {\bfseries handle\+\_\+regular} (\hyperlink{structVertex}{Vertex} $\ast$v, set$<$ \hyperlink{structEdge}{Edge} $\ast$, \hyperlink{structDCEL_1_1EdgePtrComp}{Edge\+Ptr\+Comp} $>$ \&Tau)
+\item 
+\mbox{\Hypertarget{structDCEL_a5713f17e9d21cc2a77f49bd8dbf0821d}\label{structDCEL_a5713f17e9d21cc2a77f49bd8dbf0821d}} 
+virtual void {\bfseries make\+\_\+monotone} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structDCEL_ad95be5ea47a3e065ac3db8077ed8b11f}\label{structDCEL_ad95be5ea47a3e065ac3db8077ed8b11f}} 
+int {\bfseries n}
+\item 
+\mbox{\Hypertarget{structDCEL_ade0e662c344e8b99fd3276c1694439f3}\label{structDCEL_ade0e662c344e8b99fd3276c1694439f3}} 
+vector$<$ \hyperlink{structVertex}{Vertex} $\ast$ $>$ {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{structDCEL_a2c071fc3e862f820c53610c8618aa461}\label{structDCEL_a2c071fc3e862f820c53610c8618aa461}} 
+vector$<$ \hyperlink{structEdge}{Edge} $\ast$ $>$ {\bfseries edges}
+\item 
+\mbox{\Hypertarget{structDCEL_a2d7fd9417422b18f18e8c55f1d1f49e2}\label{structDCEL_a2d7fd9417422b18f18e8c55f1d1f49e2}} 
+vector$<$ \hyperlink{structFace}{Face} $\ast$ $>$ {\bfseries faces}
+\item 
+\mbox{\Hypertarget{structDCEL_ad92c73a3c5980d727f9ec9f068bc2b0e}\label{structDCEL_ad92c73a3c5980d727f9ec9f068bc2b0e}} 
+vector$<$ \hyperlink{structFace}{Face} $\ast$ $>$ {\bfseries ymonotones}
+\item 
+\mbox{\Hypertarget{structDCEL_aa88d0e054d12b2444fa45aa2da22d988}\label{structDCEL_aa88d0e054d12b2444fa45aa2da22d988}} 
+int {\bfseries monotone\+\_\+edges}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structDCEL}{D\+C\+EL} struct\+: The main \hyperlink{structDCEL}{D\+C\+EL} data structure that is used to represent the regions. Implements handling for different kinds of vertices through its member functions; Also implements the make-\/montone function that decomposes the polygon into monotone subcomponents. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{data__structure_8hpp}{data\+\_\+structure.\+hpp}\item 
+src/data\+\_\+structure.\+cpp\end{DoxyCompactItemize}

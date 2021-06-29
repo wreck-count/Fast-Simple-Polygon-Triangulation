@@ -1,0 +1,4 @@
+<map id="Vertex" name="Vertex">
+<area shape="rect" id="node2" href="$structEdge.html" title="Edge struct: has Edge data members that store pointers to twin, next and prev has Vertex data members..." alt="" coords="20,118,72,145"/>
+<area shape="rect" id="node3" href="$structFace.html" title="Face struct: Contains a pointer to the corresponding Edge. " alt="" coords="21,216,72,243"/>
+</map>

@@ -1,0 +1,61 @@
+\hypertarget{structVertex}{}\section{Vertex Struct Reference}
+\label{structVertex}\index{Vertex@{Vertex}}
+
+
+\hyperlink{structVertex}{Vertex} struct\+: has a data member type that identifies the vertex type among start, end, regular, split, merge has two data members x and y corresponding to the x and y co-\/ordinates of the vertex respectively overloads comparison operator.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+structure.\+hpp$>$}
+
+
+
+Collaboration diagram for Vertex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{structVertex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structVertex_a2927de87e482ddebbb18abf7f811c6c3}{Vertex} (double x, double y)
+\item 
+\mbox{\Hypertarget{structVertex_a666b9e590347fa9a3e10d468ae6d6836}\label{structVertex_a666b9e590347fa9a3e10d468ae6d6836}} 
+bool {\bfseries operator$<$} (const \hyperlink{structVertex}{Vertex} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structVertex_a9bbbbd39330811b13f4a5de0583b84ea}\label{structVertex_a9bbbbd39330811b13f4a5de0583b84ea}} 
+int {\bfseries type}
+\item 
+\mbox{\Hypertarget{structVertex_af2602132c3297d81bc9f8ee54867445b}\label{structVertex_af2602132c3297d81bc9f8ee54867445b}} 
+double {\bfseries x}
+\item 
+\mbox{\Hypertarget{structVertex_a7563c83da86f4a0831144bc823fec2b0}\label{structVertex_a7563c83da86f4a0831144bc823fec2b0}} 
+double {\bfseries y}
+\item 
+\mbox{\Hypertarget{structVertex_a668b3aa9231e5aab5799aca4ada528db}\label{structVertex_a668b3aa9231e5aab5799aca4ada528db}} 
+struct \hyperlink{structEdge}{Edge} $\ast$ {\bfseries incident\+\_\+edge}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structVertex}{Vertex} struct\+: has a data member type that identifies the vertex type among start, end, regular, split, merge has two data members x and y corresponding to the x and y co-\/ordinates of the vertex respectively overloads comparison operator. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structVertex_a2927de87e482ddebbb18abf7f811c6c3}\label{structVertex_a2927de87e482ddebbb18abf7f811c6c3}} 
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\subsubsection{\texorpdfstring{Vertex()}{Vertex()}}
+{\footnotesize\ttfamily Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor to initialize the co-\/ordinates of the vertex 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{data__structure_8hpp}{data\+\_\+structure.\+hpp}\end{DoxyCompactItemize}

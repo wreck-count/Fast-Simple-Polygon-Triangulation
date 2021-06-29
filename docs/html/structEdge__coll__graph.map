@@ -1,0 +1,4 @@
+<map id="Edge" name="Edge">
+<area shape="rect" id="node2" href="$structVertex.html" title="Vertex struct: has a data member type that identifies the vertex type among start, end, regular, split, merge has two data members x and y corresponding to the x and y co&#45;ordinates of the vertex respectively overloads comparison operator. " alt="" coords="45,127,105,153"/>
+<area shape="rect" id="node3" href="$structFace.html" title="Face struct: Contains a pointer to the corresponding Edge. " alt="" coords="180,127,231,153"/>
+</map>
